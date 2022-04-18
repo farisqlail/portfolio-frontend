@@ -1,9 +1,9 @@
 <template>
-    <router-view></router-view>
+    <h3>Edit Blog</h3>
 </template>
 
 <script>
 export default {
-  name: 'App',
+    
 }
 </script>
