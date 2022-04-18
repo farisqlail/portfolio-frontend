@@ -3,15 +3,15 @@
 
      <div class="container">
         <section id="blog">
-            <div class="blogs" v-for="(blog, index) in blogs.data" :key="index">
+            <div class="portfolio" v-for="(portfolio, index) in portfolios.data" :key="index">
                 <h3>
-                    {{ blog.title }}
+                    {{ portfolio.title }}
                 </h3>
                 <p>
-                  {{ blog.deskripsi }}
+                  {{ portfolio.deskripsi }}
                 </p>
                 
-                <a href="{{ blog.link }}" target="blank">Lihat Selengkapnya</a>
+                <a href="{{ portfolio.link }}" target="blank">Lihat Selengkapnya</a>
                 <br><br>
             </div>
         </section>
@@ -21,29 +21,27 @@
 <script>
 import axios from 'axios'
 import {onMounted, ref} from 'vue'
-import Navbar from "../../components/Navbar.vue";
+import Navbar from '../../components/Navbar.vue';
 
 export default {
-  components: { Navbar },
+    components: { Navbar },
     setup() {
-        //reactive state
-        let blogs = ref([]);
-        
+
+        let portfolios = ref([]);
+
         onMounted(() => {
-            //get data from api
-            axios.get('http://localhost:8000/api/blog')
+            axios.get('http://127.0.0.1:8000/api/portfolio')
             .then((result) => {
-                blogs.value = result.data
+                portfolios.value = result.data
             }).catch((err) => {
                 console.log(err.response)
             });
         });
 
         return {
-            blogs,
+            portfolios,
             Navbar
         }
     }
-
-};
+}
 </script>
