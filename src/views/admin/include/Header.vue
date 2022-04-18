@@ -1,0 +1,32 @@
+<template>
+  <!-- <link href="{{ asset('assets/img/Farisqlail.png') }}" rel="icon" /> -->
+
+  <!-- Custom fonts for this template-->
+  <fontAwesome />
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css"
+  />
+  <cssAdmin />
+  <link
+    href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css"
+    rel="stylesheet"
+  />
+</template>
+
+<script>
+import fontAwesome from "../../../Template/vendor/fontawesome-free/css/all.min.css";
+import cssAdmin from "../../../Template/css/sb-admin-2.min.css";
+
+export default {
+  components: {
+    fontAwesome,
+    cssAdmin,
+  },
+};
+</script>
