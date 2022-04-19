@@ -1,56 +1,54 @@
 <template>
- <!-- Page Wrapper -->
+  <!-- Page Wrapper -->
   <div id="wrapper">
     <Sidebar />
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
-      <Navbar />
-
       <!-- Main Content -->
       <div id="content">
-
+          
+        <Navbar />
         <!-- Begin Page Content -->
         <div class="container-fluid">
-          
-        </div>
-        <!-- /.container-fluid -->
-
-      </div>
-      <!-- End of Main Content -->
-
-      <!-- Footer -->
-      <footer class="sticky-footer bg-white">
-        <div class="container my-auto">
-          <div class="copyright text-center my-auto">
-          <span>Copyright &copy; {{ date("Y") }}</span>
+          <!-- Page Heading -->
+          <div
+            class="d-sm-flex align-items-center justify-content-between mb-4"
+          >
+            <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
           </div>
+          <!-- /.container-fluid -->
         </div>
-      </footer>
-      <!-- End of Footer -->
+        <!-- End of Main Content -->
 
+        <!-- Footer -->
+        <!-- <footer class="sticky-footer bg-white">
+          <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+              <span>Copyright &copy; Your Website 2022</span>
+            </div>
+          </div>
+        </footer> -->
+        <!-- End of Footer -->
+      </div>
+      <!-- End of Content Wrapper -->
     </div>
-    <!-- End of Content Wrapper -->
-
   </div>
   <!-- End of Page Wrapper -->
 
   <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded bg-primary" href="#page-top">
+  <a class="scroll-to-top rounded" href="#page-top">
     <i class="fas fa-angle-up"></i>
   </a>
-
 </template>
 
 <script>
-import './include/Header.vue'
-import './include/Footer.vue'	
-import Navbar from './include/Navbar.vue'
-// import Sidebar from './include/Sidebar.vue'
-
+import Navbar from "../../components/NavbarAdmin.vue";
+import Sidebar from "../../components/SidebarAdmin.vue";
 export default {
-    components: {
-        Navbar,
-        Sidebar
-    },
-}
+  name: "App",
+  components: {
+    Navbar,
+    Sidebar,
+  },
+};
 </script>
