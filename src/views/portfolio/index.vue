@@ -42,6 +42,9 @@ export default {
             portfolios,
             Navbar
         }
-    }
+    },
+    mounted (){
+        document.title = 'Portfolio | Faris Rizqilail'
+    },
 }
 </script>

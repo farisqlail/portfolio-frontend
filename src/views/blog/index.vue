@@ -43,7 +43,9 @@ export default {
             blogs,
             Navbar
         }
-    }
-
+    },
+    mounted() {
+        document.title = 'Blog | Faris Rizqilail'
+    },
 };
 </script>

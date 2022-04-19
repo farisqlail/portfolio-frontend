@@ -1,9 +1,3 @@
-<script setup>
-import TheWelcome from "@/components/TheWelcome.vue";
-import Navbar from "@/components/Navbar.vue";
-import css from "@/assets/base.css";
-</script>
-
 <template>
   <main>
     <Navbar />
@@ -20,3 +14,14 @@ import css from "@/assets/base.css";
   </main>
 </template>
 
+<script>
+import Navbar from "@/components/Navbar.vue";
+import css from "@/assets/base.css";
+export default {
+  components: { Navbar },
+  
+  mounted() {
+    document.title = 'Faris Rizqilail'
+  },
+}
+</script>

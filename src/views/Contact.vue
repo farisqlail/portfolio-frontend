@@ -24,5 +24,8 @@ import Navbar from "@/components/Navbar.vue";
 
 export default {
   components: { Navbar },
+  mounted() {
+    document.title = "Contact";
+  },
 };
 </script>
