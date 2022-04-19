@@ -21,16 +21,16 @@
     <!-- Nav Item - Dashboard -->
     <li class="nav-item active">
       <a class="nav-link" href="">
-        <i class="fas fa-fw fa-tachometer-alt"></i>
+        <i class="fas fa-book"></i>
         <span>Dashboard</span></a
       >
     </li>
 
     <li class="nav-item">
-      <a class="nav-link" href="">
-        <i class="fas fa-fw fa-book"></i>
-        <span>Blog</span></a
-      >
+      <router-link class="nav-link" :to="{ name: 'blog-dashboard' }">
+        <i class="fas fa-book"></i>
+        <span>Blog</span>
+      </router-link>
     </li>
 
     <li class="nav-item">

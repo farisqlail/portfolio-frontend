@@ -15,16 +15,6 @@ const router = createRouter({
       component: () => import('../views/blog/index.vue')
     },
     {
-      path: '/blog/create',
-      name: 'blog-create',
-      component: () => import('../views/blog/create.vue')
-    },
-    {
-      path: '/blog/edit/:id',
-      name: 'blog-edit',
-      component: () => import('../views/blog/edit.vue')
-    },
-    {
       path: '/portfolios',
       name: 'portfolios',
       component: () => import('../views/portfolio/index.vue')
@@ -35,10 +25,34 @@ const router = createRouter({
       component: () => import('../views/Contact.vue')
     },
 
+    //Authentication
+    {
+      path: '/login',
+      name: 'login',
+      component: () => import('../views/auth/Login.vue')
+    },
+
+    //Dashboard Admin
     {
       path: '/dashboard',
       name: 'dashboard',
       component: () => import('../views/admin/Dashboard.vue')
+    },
+    //Blog
+    {
+      path: '/dashboard/blogs',
+      name: 'blog-dashboard',
+      component: () => import('../views/admin/blog/Index.vue')
+    },
+    {
+      path: '/dashboard/blog/create',
+      name: 'blog-create',
+      component: () => import('../views/admin/blog/Create.vue')
+    },
+    {
+      path: '/dashboard/blog/edit/:id',
+      name: 'blog-edit',
+      component: () => import('../views/admin/blog/Edit.vue')
     },
   ]
 })

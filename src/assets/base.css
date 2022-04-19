@@ -65,8 +65,9 @@ body {
   background: var(--color-background);
   transition: color 0.5s, background-color 0.5s;
   line-height: 1.6;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
   font-size: 15px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -74,20 +75,20 @@ body {
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
-.darkmode{
+.darkmode {
   background-color: #222;
   color: #e6e6e6;
   border-color: #e6e6e6;
 }
 
-.darkmode .navbar .navbar-brand{
+.darkmode .navbar .navbar-brand {
   color: #e6e6e6;
 }
 
-.darkmode .navbar .navbar-nav .nav-link{
+.darkmode .navbar .navbar-nav .nav-link {
   color: #e6e6e6;
 }
 
@@ -142,22 +143,22 @@ body.night {
   padding-right: 330px;
 }
 
-@media (max-width: 640px){
+@media (max-width: 640px) {
   .navbar {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
-@media (max-width: 768px){
-  .navbar{
+@media (max-width: 768px) {
+  .navbar {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
-@media (max-width: 950px){
-  .navbar{
+@media (max-width: 950px) {
+  .navbar {
     padding-left: 0;
     padding-right: 0;
   }
@@ -170,29 +171,29 @@ body.night {
 }
 
 #home {
-  padding: 220px;
-  display:inline-block;
+  padding: 230px;
+  display: inline-block;
   align-items: center;
 }
 
 #home h2 {
   font-weight: 600;
 }
-@media (max-width: 950px){
-  #home{
+@media (max-width: 950px) {
+  #home {
     padding-right: 30px;
     padding-left: 30px;
   }
 }
 
-@media (max-width: 768px){
-  #home{
+@media (max-width: 768px) {
+  #home {
     padding-right: 0;
     padding-left: 0;
   }
 }
 
-@media (max-width: 640px){
+@media (max-width: 640px) {
   #home {
     padding-top: 200px;
     padding-left: 10px;
@@ -202,9 +203,9 @@ body.night {
 
 #blog {
   padding-top: 50px;
-  padding-left: 210px;
+  padding-left: 230px;
   padding-right: 240px;
-  display:inline-block;
+  display: inline-block;
   align-items: center;
 }
 
@@ -216,22 +217,22 @@ body.night {
   color: #000;
 }
 
-@media (max-width: 950px){
-  #blog{
+@media (max-width: 950px) {
+  #blog {
     padding-top: 20px;
     padding-right: 30px;
     padding-left: 10px;
   }
 }
 
-@media (max-width: 768px){
-  #blog{
+@media (max-width: 768px) {
+  #blog {
     padding-right: 0px;
     padding-left: 0;
   }
 }
 
-@media (max-width: 640px){
+@media (max-width: 640px) {
   #blog {
     padding-top: 50px;
     padding-left: 10px;
@@ -243,7 +244,7 @@ body.night {
   padding-top: 50px;
   padding-left: 230px;
   padding-right: 240px;
-  display:inline-block;
+  display: inline-block;
   align-items: center;
 }
 
@@ -255,22 +256,22 @@ body.night {
   font-weight: 600;
 }
 
-@media (max-width: 950px){
-  #porto{
+@media (max-width: 950px) {
+  #porto {
     padding-top: 20px;
     padding-right: 30px;
     padding-left: 10px;
   }
 }
 
-@media (max-width: 768px){
-  #porto{
+@media (max-width: 768px) {
+  #porto {
     padding-right: 0px;
     padding-left: 0;
   }
 }
 
-@media (max-width: 640px){
+@media (max-width: 640px) {
   #porto {
     padding-top: 50px;
     padding-left: 10px;
@@ -282,7 +283,7 @@ body.night {
   padding-top: 50px;
   padding-left: 230px;
   padding-right: 240px;
-  display:inline-block;
+  display: inline-block;
   align-items: center;
 }
 
@@ -294,22 +295,22 @@ body.night {
   font-weight: 600;
 }
 
-@media (max-width: 950px){
-  #kontak{
+@media (max-width: 950px) {
+  #kontak {
     padding-top: 20px;
     padding-right: 30px;
     padding-left: 10px;
   }
 }
 
-@media (max-width: 768px){
-  #kontak{
+@media (max-width: 768px) {
+  #kontak {
     padding-right: 0px;
     padding-left: 0;
   }
 }
 
-@media (max-width: 640px){
+@media (max-width: 640px) {
   #kontak {
     padding-top: 50px;
     padding-left: 10px;
@@ -322,8 +323,27 @@ body.night {
   padding-left: 8px;
 }
 
-@media (max-width: 640px){
+@media (max-width: 640px) {
   .icon {
     padding-left: 0;
   }
+}
+
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #6a11cb;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(106, 17, 203, 1),
+    rgba(37, 117, 252, 1)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to right,
+    rgba(106, 17, 203, 1),
+    rgba(37, 117, 252, 1)
+  );
 }
