@@ -54,6 +54,13 @@ const router = createRouter({
       name: 'blog-edit',
       component: () => import('../views/admin/blog/Edit.vue')
     },
+
+    //Portfolio Admin
+    {
+      path: '/dashboard/portfolio',
+      name: 'portfolio-dashboard',
+      component: () => import('../views/admin/portfolio/Index.vue')
+    },
   ]
 })
 

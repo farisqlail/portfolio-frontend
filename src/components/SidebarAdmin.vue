@@ -34,9 +34,9 @@
     </li>
 
     <li class="nav-item">
-      <a class="nav-link" href="">
+      <router-link class="nav-link" :to="{ name: 'portfolio-dashboard' }">
         <i class="fas fa-fw fa-brain"></i>
-        <span>Portfolio</span></a
+        <span>Portfolio</span></router-link
       >
     </li>
 
